@@ -47,7 +47,7 @@ def show_result_dialog(ans1, ans2):
 
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
- if score == 2:
+    if score == 2:
         st.success("🎉 You win!")
     else:
         st.error("💀 You lose!")
@@ -94,7 +94,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
         st.rerun()
 
     time.sleep(1)
-   st.rerun()
+    st.rerun()
 
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
